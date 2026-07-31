@@ -4,7 +4,7 @@ import asyncio
 from typing import Any
 from mcp import types
 
-async def handle_message(
+async def handle_notification(
         agent,
         message: Any,
     ) -> None:
