@@ -29,10 +29,10 @@ async def open_transport(
         if not config.http_url:
             raise ValueError("http_url is required for HTTP transport.")
 
-        async with sse_client(
-            config.http_url, headers=config.http_headers
-        ) as (read, write):
-            yield read, write, lambda: None
+        async with streamable_http_client(
+            config.http_url
+        ) as (read, write, get_session_id):
+            yield read, write, get_session_id
 
     else:
         raise ValueError(f"Unsupported transport mode: {config.transport_mode}")
