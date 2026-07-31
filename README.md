@@ -1,10 +1,10 @@
-# 🏨 Aurelia Hotels & Resorts MCP
+#  Aurelia Hotels & Resorts MCP
 
 An AI-powered hotel recovery management system built using the **Model Context Protocol (MCP)**. The project helps hotel staff manage overbooking incidents, recovery requests, room transfers, and guest compensation through an intelligent AI agent connected to an MCP server and a relational database.
 
 ---
 
-# 📖 Overview
+#  Overview
 
 Aurelia Hotels & Resorts MCP integrates three main components:
 
@@ -16,7 +16,7 @@ Together, these components create an intelligent hotel recovery system capable o
 
 ---
 
-# ✨ Features
+#  Features
 
 - Hotel Management
 - Reservation Management
@@ -30,14 +30,13 @@ Together, these components create an intelligent hotel recovery system capable o
 
 ---
 
-# 👥 Team Responsibilities
+#  Team Responsibilities
 
 | Team Member | Responsibility |
-|-------------|----------------|
-| **Nourhan Ahmed** | MCP Server Development |
-| **Sagda Sherif** | Database Design, SQL Schema, ERD, Seed Data, Compensation Policy, `approve_compensation` Tool |
-| **Nour Mohamed** | AI Agent Development |
 
+| **Nour Mohamed** | MCP Server Development |
+| **Sama Sherif** | Database Design, SQL Schema, ERD, Seed Data, Compensation Policy, `approve_compensation` Tool |
+| **Nourhan Ahmed** | AI Agent Development |
 ---
 
 # 🗂️ Project Structure
@@ -55,7 +54,7 @@ Aurelia-Hotel-MCP
 
 ---
 
-# 🖥️ MCP Server
+#  MCP Server
 
 The MCP Server exposes hotel services and resources through the Model Context Protocol.
 
@@ -71,7 +70,7 @@ The MCP Server exposes hotel services and resources through the Model Context Pr
 
 ---
 
-# 🤖 AI Agent
+#  AI Agent
 
 The AI Agent communicates with the MCP Server and uses Google Gemini to automate hotel recovery operations.
 
@@ -87,7 +86,7 @@ The AI Agent communicates with the MCP Server and uses Google Gemini to automate
 
 ---
 
-# 🗄️ Database Module
+#  Database Module
 
 The database was designed to support hotel recovery workflows and maintain data consistency.
 
@@ -112,7 +111,7 @@ The database was designed to support hotel recovery workflows and maintain data 
 
 ---
 
-# 🛠️ Compensation Tool
+#  Compensation Tool
 
 ### `approve_compensation()`
 
@@ -174,7 +173,7 @@ This MCP tool validates guest compensation requests before approval by applying 
 
 ---
 
-# 🚀 Getting Started
+#  Getting Started
 
 ### Clone the repository
 
@@ -202,12 +201,12 @@ python -m agent.demo --auto
 
 ---
 
-# 🎯 Project Objective
+#  Project Objective
 
 Develop an intelligent hotel recovery platform that combines AI, MCP, and relational databases to automate recovery workflows, improve guest satisfaction, and support hotel staff in resolving overbooking situations efficiently.
 
 ---
 
-# 📄 License
+#  License
 
 This project was developed for academic purposes as part of the **Faculty of Computer and Data Science – Alexandria University**.ث3
