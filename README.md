@@ -39,7 +39,7 @@ Together, these components create an intelligent hotel recovery system capable o
 | **Nourhan Ahmed** | AI Agent Development |
 ---
 
-# 🗂️ Project Structure
+#  Project Structure
 
 ```text
 Aurelia-Hotel-MCP
@@ -127,7 +127,7 @@ This MCP tool validates guest compensation requests before approval by applying 
 
 ---
 
-# 📊 Database Screenshots
+#  Database Screenshots
 
 ## Entity Relationship Diagram
 
