@@ -60,8 +60,8 @@ class AureliaAgent:
                 elicitation_callback=lambda ctx, params: agent.elicitation.handle_elicitation(
                     self, ctx, params
                 ),
-                message_handler=lambda ctx, params: agent.notification.handle_notification(
-                    self, ctx, params
+                message_handler=lambda *args, **kwargs: agent.notification.handle_notification(
+                 self, *args, **kwargs
                 ),
                 client_info=mcp_types.Implementation(
                     name=self.config.client_name,
