@@ -179,3 +179,30 @@ python -m agent.demo --auto
 - SQLite
 - SSE / stdio transports
 - JSON-RPC 2.0
+
+## Transport Modes (Stdio vs. Streamable HTTP)
+
+The Aurelia Agent supports two transport modes, configured via your `.env` file:
+
+### 1. Stdio Mode (Default - Local Subprocess)
+The agent launches the MCP server locally as a subprocess.
+* **.env configuration:**
+  ```env
+  MCP_TRANSPORT=stdio
+
+### 2. Streamable HTTP Mode (Remote / HTTP)
+The agent connects to a running remote/HTTP MCP server.
+
+Step 1: Run the server with HTTP transport:
+```bash
+python main.py  # configured with mcp.run(transport="streamable-http")
+```
+Step 2: Configure .env for the client:
+```bash
+MCP_TRANSPORT=http
+MCP_SERVER_URL=[http://127.0.0.1:8000/mcp](http://127.0.0.1:8000/mcp)
+```
+Step 3: Run the demo/agent normally:
+```bash
+python -m agent.demo --auto
+```
