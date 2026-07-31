@@ -1,22 +1,22 @@
 from mcp.server.fastmcp import FastMCP
 from mcp.server.fastmcp import Context
-
 import sqlite3
 import time
 from jsonschema import validate
+import os
 
-# MCP SERVER
+from . import mcp
+from . import tools
+from . import resources
+from . import prompts
+from . import notifications
 
-mcp = FastMCP(
-    "Aurelia Hotel Recovery Server",
-    json_response=True
-)
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+DB = os.path.join(BASE_DIR, "db", "hotel.db")
+
 
 # DATABASE
-
-DB = "db"          
-
-
+          
 def get_db():
     return sqlite3.connect(DB)
 
@@ -34,18 +34,17 @@ SERVER_CAPABILITIES = {
 
 @mcp.tool()
 def initialize():
-
     """
     Capability Negotiation
     """
-
     return {
         "server": "Aurelia Hotel Recovery Server",
         "version": "1.0",
         "capabilities": SERVER_CAPABILITIES
     }
-if __name__ == "__main__":
 
+if __name__ == "__main__":
+    print(mcp.list_tools())
     print("Starting Aurelia Hotel MCP Server...")
 
-    mcp.run()
+    mcp.run(transport="streamable-http")

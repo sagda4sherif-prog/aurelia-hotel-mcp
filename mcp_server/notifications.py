@@ -1,3 +1,5 @@
+from __future__ import annotations
+from . import mcp
 # NOTIFICATIONS
 
 current_role = "receptionist"
