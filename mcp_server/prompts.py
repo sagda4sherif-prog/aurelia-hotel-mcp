@@ -1,3 +1,5 @@
+import time
+from . import mcp
 @mcp.prompt()
 def draft_guest_apology(
     guest_name: str,

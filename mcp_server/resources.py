@@ -1,10 +1,9 @@
 # ======================================================
 # RESOURCES
 # ======================================================
+from . import mcp
 
-@mcp.resource(
-    "policy://guest-compensation"
-)
+@mcp.resource("policy://guest-compensation")
 def compensation_policy():
 
     return """
