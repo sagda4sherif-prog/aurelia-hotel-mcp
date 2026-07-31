@@ -209,4 +209,4 @@ Develop an intelligent hotel recovery platform that combines AI, MCP, and relati
 
 #  License
 
-This project was developed for academic purposes as part of the **Faculty of Computer and Data Science – Alexandria University**.ث3
+This project was developed for academic purposes as part of the **Faculty of Computer and Data Science – Alexandria University**.
