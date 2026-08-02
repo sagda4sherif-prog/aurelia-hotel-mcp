@@ -1,6 +1,6 @@
-# ======================================================
+from . import mcp
+
 # RESOURCES
-# ======================================================
 from . import mcp
 
 @mcp.resource("policy://guest-compensation")

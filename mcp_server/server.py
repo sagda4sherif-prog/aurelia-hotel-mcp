@@ -5,6 +5,8 @@ from . import mcp
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DB = os.path.join(BASE_DIR, "db", "hotel.db")
 
+# DATABASE
+          
 def get_db():
     return sqlite3.connect(DB)
 
